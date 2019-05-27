@@ -3,6 +3,7 @@ Como gerar códigos de barras a partir de um fuckup em python
 
 Salvar o doc “gerador.py” abaixo no Desktop ou em alguma pasta de preferência
 
+```
 import csv
 import os
 import requests
@@ -44,7 +45,7 @@ with open(data_source_file, 'rb') as csvfile:
                 shutil.copyfileobj(response.raw, out_file)
         else:
             print('Error: ' + response.text)
-
+```
 Criar um arquivo “data.csv” no Excel e subir as informações dos barcodes como “identifier” e “barcode"
 identifier
 barcode
